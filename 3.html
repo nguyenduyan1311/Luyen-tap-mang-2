@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let arr = [];
+    let aLength = +prompt("Nhập độ dài mảng:");
+    let result = 0;
+    for (let i = 0; i < aLength; i++){
+        arr[i] = prompt("Nhập ký tự bất kì để lưu vào phần tử " + i + " của mảng:");
+    }
+    for (let i of arr){
+        if (!isNaN(i)){
+            result++;
+        }
+    }
+    alert("Mảng [" + arr + "] gồm " + result + " ký tự số!");
+</script>
+</body>
+</html>
